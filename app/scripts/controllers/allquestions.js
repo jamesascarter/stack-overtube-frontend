@@ -4,7 +4,7 @@
 angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http) {
 
       var getQuestions = function () {
-        return $http.get('data/questions.json').then(function(response) {
+        return $http.get('app/data/questions.json').then(function(response) {
           $scope.questions = response.data;
         return response;
        })
@@ -29,7 +29,7 @@ angular.module('stackOverTubeApp').controller('QuestionRetrieverCtrl', function 
   $scope.questionId = $stateParams.questionId
 
       var getBody = function () {
-        return $http.get('data/questions.json').then(function(response) {
+        return $http.get('app/data/questions.json').then(function(response) {
           $scope.question = response.data[$stateParams.questionId -1]
       })
       };
