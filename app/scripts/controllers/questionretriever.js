@@ -4,8 +4,10 @@ angular.module('stackOverTubeApp').controller('QuestionRetrieverCtrl', function 
 
   $scope.questionId = $stateParams.questionId
     var getBody = function () {
-      return $http.get('app/data/questions.json').then(function(response) {
-        $scope.question = response.data[$stateParams.questionId -1]
+      return $http.get('https://overtube-backend.herokuapp.com/question/'+ $scope.questionId).then(function(response) {
+      	console.log(response)
+        $scope.question = response.data.question
+        console.log($scope.question);
       });
     };
     getBody()
