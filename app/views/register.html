@@ -1,17 +1,24 @@
-<p>This is the register view.</p>
+
 
 <div ng-controller="RegisterCtrl">
 
-  <form>
+<h2 id="ask-question-title">Register</h2>
 
-    <input type="text" ng-model="firstName" placeholder="firstName">
-    </br>
-    <input type="text" ng-model="lastName" placeholder="lastName">
-    </br>
-    <input type="text" ng-model="username" placeholder="username">
-    </br>
-    <input type="password" ng-model="password" placeholder="password">
-    <button value="submit" data-ng-click="register()">Register</button>
+  <form id="ask-question-form">
+
+    <input id="input" type="text" ng-model="firstName" placeholder="First Name">
+    <br>
+    <br>
+    <input id="input" type="text" ng-model="lastName" placeholder="Last Name">
+    <br>
+    <br>
+    <input id="input" type="text" ng-model="username" placeholder="Username">
+    <br>
+    <br>
+    <input id="input" type="password" ng-model="password" placeholder="Password">
+    <br>
+    <br>
+    <button id="home-ask-button" value="submit" data-ng-click="register()">Register</button>
 
   </form>
 </div>

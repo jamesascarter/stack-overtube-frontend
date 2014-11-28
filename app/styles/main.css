@@ -2,14 +2,15 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #C8DEFF;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/*  padding-left: 15px;
+  padding-right: 15px;*/
 }
 
 /* Custom page header */
@@ -31,15 +32,15 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
+/*/* Customize container */
+/*@media (min-width: 768px) {
   .container {
     max-width: 1100px;
   }
 }
 .container-narrow > hr {
   margin: 30px 0;
-}
+}*/
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -79,46 +80,18 @@ body {
 }
 
 
-
-
-
-.video-section .pattern-overlay {
-background-color: rgba(71, 71, 71, 0.59);
-padding: 110px 0 32px;
-min-height: 496px; 
-/* Incase of overlay problems just increase the min-height*/
-}
-.video-section h1, .video-section h3{
-text-align:center;
-color:#fff;
-}
-.video-section h1{
-font-size:110px;
-font-family: 'Buenard', serif;
-font-weight:bold;
-text-transform: uppercase;
-margin: 40px auto 0px;
-text-shadow: 1px 1px 1px #000;
--webkit-text-shadow: 1px 1px 1px #000;
--moz-text-shadow: 1px 1px 1px #000;
-}
-.video-section h3{
-font-size: 25px;
-font-weight:lighter;
-margin: 0px auto 15px;
-}
-.video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
-
 #logo {
-padding-bottom: 5px;
+ padding-bottom: 5px;
  width: 220px;
  height: auto;
 }
 
 #logo-big {
-  padding-top: 120px;
-  width: 100%;
+  padding-top: 100px;
+  padding-left: 20%;
+  padding-right: auto;
+  width: 75%;
+  height: auto;
 }
 
 #question-snippets {
@@ -145,6 +118,15 @@ padding-bottom: 5px;
 
 #spacer {
   min-height: 500px;
+  width: 100%;
+
+}
+
+#spacer2 {
+  min-height: 500px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 #ask-question-form {
@@ -156,6 +138,7 @@ padding-bottom: 5px;
   padding: 10px 15px;
   background: #4479BA;
   color: #FFF;
+  opacity: 1;
 }
 
 #input {
@@ -163,7 +146,8 @@ padding-bottom: 5px;
   border-color: grey;
   text-align: center;
   width: 500px;
-  opacity: 0.9;
+  opacity: 0.4;
+  height: 45px;
 }
 
 #input-description {
@@ -172,26 +156,53 @@ padding-bottom: 5px;
   border-radius:5px;
   height: 200px;
   width: 500px;
-  opacity: 0.9;
+  opacity: 0.4;
 }
 
 #ask-question-title {
   text-align: center;
 }
 
-.ask-questions-page {
-  background-image: url("/../app/images/logo.jpg");
-  background-size: 100%;
-  opacity: 0.5;
+/*.ask-questions-page {
+  background-image: url("/../app/images/codepng.png");
+  background-size: 75%;
   background-repeat: no-repeat; 
   background-position: center;
 }
-
-/*.home-section {
-  background-image: url("/../app/images/code.jpg");
-  opacity: 0.5;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 */
+.ask-question-form {
+  opacity: 0.3;
+}
 
+  .container {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+#tagline {
+  color: grey;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#home-ask-button {
+  text-align: center;
+  background-color: #C8DEFF;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+
+#button-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#navbar-custom {
+  color: black;
+}
+
+#horizontal-rule {
+  border-color: black;
+}
