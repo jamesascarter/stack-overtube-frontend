@@ -1,20 +1,22 @@
-<h2 id="ask-question-title">Post a Question</h2>
+<section class="ask-questions-page">
+  <h2 id="ask-question-title">Post a Question</h2>
 
-<div ng-controller="AskquestionsCtrl">
+  <div ng-controller="AskquestionsCtrl">
 
-  <form id="ask-question-form">
+    <form id="ask-question-form">
 
-    <input id="input" type="text" ng-model="title" placeholder="Title">
-    </br>
+      <input id="input"  type="text" ng-model="title" placeholder="Title">
       </br>
-    <input id="input-description" type="text" ng-model="description" placeholder="Description">
-    </br></br>
-    <input id="input" type="text" ng-model="codesnippet" placeholder="Code-snippet">
-    </br></br>
-    <input id="input" type="text" ng-model="github" placeholder="Github id">
-</br>
-</br>
-    <button id="question-button" value="submit" data-ng-click="addQuestion()">Submit</button>
+        </br>
+      <input id="input-description"  type="text" ng-model="description" placeholder="Description">
+      </br></br>
+      <input id="input" type="text" ng-model="codesnippet" placeholder="Code-snippet">
+      </br></br>
+      <input id="input" type="text" ng-model="github" placeholder="Github id">
+  </br>
+  </br>
+      <button id="question-button" value="submit" data-ng-click="addQuestion()">Submit</button>
 
-  </form>
-</div>
+    </form>
+  </div>
+</section>
