@@ -2,12 +2,13 @@
 
 angular.module('stackOverTubeApp').controller('QuestionRetrieverCtrl', function ($scope, $stateParams, $http){
 
-  $scope.questionId = $stateParams.questionId
+  $scope.questionId = $stateParams.questionId;
     var getBody = function () {
       return $http.get('https://overtube-backend.herokuapp.com/question/'+ $scope.questionId).then(function(response) {
-      	console.log(response)
-        $scope.question = response.data.question
-        console.log($scope.question);
+        $scope.question = response.data.question;
+        return $http.get('https://overtube-backend.herokuapp.com/user/'+ response.data.question.UserId).then(function(res) {
+        	$scope.user = res.data;
+        });
       });
     };
     getBody()

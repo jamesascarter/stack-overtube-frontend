@@ -3,7 +3,7 @@
 angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http) {
 
   var getQuestions = function () {
-    return $http.get('app/data/questions.json').then(function(response) {
+    return $http.get('https://overtube-backend.herokuapp.com/allquestions').then(function(response) {
       $scope.questions = response.data;
     return response;
    })
