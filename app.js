@@ -2,7 +2,13 @@ var express = require('express');
 var port = process.env.PORT || 3000;
 var app = express();
 var path = require('path');
+var config = require('./config');
+var bodyParser = require('body-parser');
+var request = require('request');
+var qs = require('querystring');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname)));
 
@@ -27,8 +33,8 @@ app.listen(port, function serverLog(){
 	console.log("Server running on " + port)
 });
 
-// STUFF UNDER HERE IS CRAAAAZY
-
+//SATELLIZE CODE - MAY NEED REFACTORING - MAY NEED TO BE MOVED TO BACKEND
+//SERVER
 app.post('/auth/github', function(req, res) {
   var accessTokenUrl = 'https://github.com/login/oauth/access_token';
   var userApiUrl = 'https://api.github.com/user';
@@ -38,7 +44,6 @@ app.post('/auth/github', function(req, res) {
     client_secret: config.GITHUB_SECRET,
     redirect_uri: req.body.redirectUri
   };
-
   // Step 1. Exchange authorization code for access token.
   request.get({ url: accessTokenUrl, qs: params }, function(err, response, accessToken) {
     accessToken = qs.parse(accessToken);
@@ -68,6 +73,10 @@ app.post('/auth/github', function(req, res) {
           });
         });
       } else {
+        console.log(profile)
+        // YOU NEED TO IMPLEMENT A USER TO SAVE THIS INFORMATION - IF YOU WANT,
+        // FOLLOW THE SATELLIZE EXAMPLES SCHEMA
+
         // Step 3b. Create a new user account or return an existing one.
         User.findOne({ github: profile.id }, function(err, existingUser) {
           if (existingUser) {
@@ -86,3 +95,4 @@ app.post('/auth/github', function(req, res) {
     });
   });
 });
+
