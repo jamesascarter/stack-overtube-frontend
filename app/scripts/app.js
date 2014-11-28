@@ -7,7 +7,7 @@ var app = angular
 app.config(function($authProvider) {
 
   $authProvider.github({
-   clientId: 'c601624f82fe9a29a57d',
+   clientId: '',
     url: '/auth/github',
     authorizationEndpoint: 'https://github.com/login/oauth/authorize',
     redirectUri: window.location.origin,
