@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http) {
+app.controller('AllquestionsCtrl', function ($scope,$http) {
 
   var getQuestions = function () {
     return $http.get('https://overtube-backend.herokuapp.com/allquestions').then(function(response) {

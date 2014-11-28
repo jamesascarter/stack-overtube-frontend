@@ -1,8 +1,8 @@
 <p>This is the register view.</p>
 
-<div ng-controller="RegisterCtrl">
+<div ng-controller="LoginCtrl">
 
-  <form>
+<!--   <form>
 
     <input type="text" ng-model="firstName" placeholder="firstName">
     </br>
@@ -13,5 +13,11 @@
     <input type="password" ng-model="password" placeholder="password">
     <button value="submit" data-ng-click="register()">Register</button>
 
-  </form>
+  </form> -->
+    <ul class="nav navbar-nav pull-right" ng-if="!isAuthenticated()">
+        <button ng-click="login('github')">Sign in with GitHub</button>
+    </ul>
+    <ul class="nav navbar-nav pull-right" ng-if="isAuthenticated()">
+      <button ng-click="logout()">Log out</button>
+    </ul>
 </div>

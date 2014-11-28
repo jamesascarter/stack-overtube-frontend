@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stackOverTubeApp').controller('QuestionRetrieverCtrl', function ($scope, $stateParams, $http){
+app.controller('QuestionRetrieverCtrl', function ($scope, $stateParams, $http){
 
   $scope.questionId = $stateParams.questionId;
     var getBody = function () {
