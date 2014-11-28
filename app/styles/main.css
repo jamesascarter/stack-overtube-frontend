@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+/*  padding-top: 20px;*/
   padding-bottom: 20px;
   background-color: #C8DEFF;
 }
@@ -174,12 +174,12 @@ body {
   opacity: 0.3;
 }
 
-  .container {
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-  }
+.container {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
 
 #tagline {
   color: grey;
@@ -206,3 +206,7 @@ body {
 #horizontal-rule {
   border-color: black;
 }
+
+/*.home-section {
+  background-image: url("/../app/images/code.jpg");
+}*/
