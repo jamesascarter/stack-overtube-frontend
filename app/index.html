@@ -30,35 +30,43 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a ui-sref="questions">QUESTIONS</a></li>
-          <li><a ui-sref="askquestion">ASK A QUESTION</a></li>
-          <li><a ui-sref="tags">TAGS</a></li>
-          <li><a ui-sref="allvideos">ALL VIDEOS</a></li>
-          <li><a ui-sref="unanswered">UNANSWERED</a></li>
-          <li><a ui-sref="register">REGISTER</a></li>
-          <li><a ui-sref="aboutus">ABOUT US</a></li>
+          <li><a id="navbar-custom" ui-sref="questions">QUESTIONS</a></li>
+          <li><a id="navbar-custom"  ui-sref="askquestion">ASK A QUESTION</a></li>
+          <li><a id="navbar-custom"  ui-sref="tags">TAGS</a></li>
+          <li><a id="navbar-custom"  ui-sref="allvideos">ALL VIDEOS</a></li>
+          <li><a id="navbar-custom"  ui-sref="unanswered">UNANSWERED</a></li>
+          <li><a id="navbar-custom"  ui-sref="register">REGISTER</a></li>
+          <li><a id="navbar-custom"  ui-sref="aboutus">ABOUT US</a></li>
         </ul>
-        <a ng-href="#"><img id="logo" src="app/images/logo.jpg"></a>
+        <a ng-href="#"><img id="logo" src="app/images/codepng.png"></a>
       </div>
 
       <div id="spacer" ui-view>
-        <div>
-      
-          <img id="logo-big" src="app/images/logo.jpg">
-      
-      </div>
+        <div class="home-section">
+          <img id="logo-big" src="app/images/codepng.png"> 
+          <h2 id="tagline">Welcome to stackovertube</h2>
+          <h4 id="tagline">Stackovertube is a question and video answer site for professional and enthusiast programmers.</h4>
+          <div id="button-section">
+            <button ui-sref="askquestion" id="home-ask-button" class="btn btn-default btn-lg">Ask a Question</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr id="horizontal-rule">
+          </div>
 
-    
+         <!--    <div id="spacer2">
+            <div> -->
+            
+        <p id="footer-text"></span> From the Stack OverTube team</p>
+        </div>
        </div>
       </div>
-    </div>
   </div>
 
 
-      <footer class="footer">
-        <p id="footer-text"></span> From the Stack OverTube team</p>
-      </footer>
-    </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
