@@ -9,6 +9,8 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+  
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,10 +24,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+
+
+
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a ng-href="#">Homepage</a></li>
           <li><a ui-sref="questions">QUESTIONS</a></li>
           <li><a ui-sref="askquestion">ASK A QUESTION</a></li>
           <li><a ui-sref="tags">TAGS</a></li>
@@ -34,14 +38,26 @@
           <li><a ui-sref="register">REGISTER</a></li>
           <li><a ui-sref="aboutus">ABOUT US</a></li>
         </ul>
-        <h3 class="text-muted">stackOverTube</h3>
+        <a ng-href="#"><img id="logo" src="app/images/logo.jpg"></a>
       </div>
 
-      <div ui-view></div>
-
-      <div class="footer">
-        <p></span> from the Stack OverTube team</p>
+      <div id="spacer" ui-view>
+        <div>
+      
+          <img id="logo-big" src="app/images/logo.jpg">
+      
       </div>
+
+    
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+      <footer class="footer">
+        <p id="footer-text"></span> From the Stack OverTube team</p>
+      </footer>
     </div>
 
 
@@ -55,6 +71,8 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
+
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -73,7 +91,6 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="app/scripts/controllers" ></script>
         <script src="app/data/questions.json" ></script>
         <script src="app/scripts/app.js"></script>
         <script src="app/scripts/controllers/main.js"></script>
@@ -81,6 +98,8 @@
         <script src="app/scripts/controllers/allquestions.js"></script>
         <script src="app/scripts/controllers/askquestions.js"></script>
         <script src="app/scripts/services/question.js"></script>
+        <script src="app/scripts/controllers/register.js"></script>
+        <script src="app/scripts/controllers/questionretriever.js"></script>
         <!-- endbuild -->
 </body>
 </html>

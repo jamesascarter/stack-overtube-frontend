@@ -9,6 +9,12 @@ app.listen(port);
 app.set('views',__dirname + '/app')
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
+app.use(function(req, res, next) {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+	next();
+})
 
 
 app.get('/', function(req, res){

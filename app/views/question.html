@@ -1,12 +1,12 @@
 <div class="jumbotron">
   <h1>{{question.title}}</h1>
-  <p>{{question.body}}</p>
+  <p>{{question.description}}</p>
 </div>
 <ul class="nav nav-pills">
   <li class="active"><a href="#">Votes<span class="badge">{{question.votes}}</span></a></li>
-  <li style="float:right"><a href="#">Answers:<span class="badge">{{question.numberAnswers}}</span></a></li>
-  <li style="float:right"><a href="#">{{question.creatorUser}}<span class="badge"></span></a></li>
-  <li><a href="#">{{question.askedTime}}<span class="badge"></span></a></li>
+<!--   <li style="float:right"><a href="#">Answers:<span class="badge">{{question.numberAnswers}}</span></a></li> -->
+  <li style="float:right"><a href="#">{{user.username}}<span class="badge"></span></a></li>
+  <li><a href="#">{{question.createdAt}}<span class="badge"></span></a></li>
 </ul>
   <br />
   <div class="well">
@@ -19,6 +19,6 @@
 <br />
 <div class="alert alert-dismissable alert-warning">
   <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>{{question.gitRepositoryUrl}}</h4>
+  <h4>{{question.githubRepo}}</h4>
   <p> <a href="#" class="alert-link">The project codebase can be found in this repository.</a>.</p>
 </div>
