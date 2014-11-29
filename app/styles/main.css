@@ -308,3 +308,62 @@ ul {
   background-color: #1E1E19;
   border-radius: 15px;
 }
+
+#round-images {
+  max-height: 175px;
+  -webkit-filter: none;
+}
+
+#round-images:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+.img-circle {
+  border: solid;
+  border-color: white;
+  margin: 0;
+}
+
+#james-img {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+/*  max-width: 300px;*/
+}
+
+#craig-img {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+/*  max-width: 300px;*/
+
+}
+
+#anna-img {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+/*  max-width: 300px;*/
+
+}
+
+#pablo-img {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+/*  max-width: 300px;*/
+
+}
+
+#about-us-images {
+  display: inline;
+}
+
