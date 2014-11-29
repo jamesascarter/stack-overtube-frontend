@@ -1,8 +1,25 @@
 /* Space out content a bit */
 body {
 /*  padding-top: 20px;*/
+/*  background-image: url("/../app/images/code.jpg");*/
+ /* opacity: 0.6;*/
   padding-bottom: 20px;
   background-color: #C8DEFF;
+  background-repeat: repeat-y;
+}
+
+body:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+ /*   background-image: url("/../app/images/background.jpg");
+    background-repeat: repeat-x;*/
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -81,13 +98,14 @@ body {
 
 
 #logo {
+  padding-top: 10px;
  padding-bottom: 5px;
  width: 220px;
  height: auto;
 }
 
 #logo-big {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-left: 20%;
   padding-right: auto;
   width: 75%;
@@ -96,6 +114,7 @@ body {
 
 #question-snippets {
   list-style-type: none;
+  padding-top: 40px;
 }
 
 #footer-text {
@@ -181,15 +200,15 @@ body {
 }
 
 #tagline {
-  color: grey;
   text-align: center;
+  color: grey;
   padding-bottom: 20px;
 }
 
 #home-ask-button {
   text-align: center;
   background-color: #C8DEFF;
-  opacity: 0.9;
+  opacity: 0.4;
   border-radius: 25px;
 }
 
@@ -200,12 +219,41 @@ body {
 
 #navbar-custom {
   color: black;
+  font-size: 13px;
 }
 
-#horizontal-rule {
-  border-color: black;
+#navbar-custom:hover {
+  opacity: 0.5;
 }
 
-/*.home-section {
-  background-image: url("/../app/images/code.jpg");
-}*/
+.question-display {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.well {
+  text-align: center;
+  min-height: 200px;
+  max-height: 300px;
+  border-radius: 25px;
+}
+
+#questions-title {
+  padding-top: 40px;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+.jumbotron {
+  border: solid;
+  border-radius: 25px;
+}
+
+#main-question-part {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
