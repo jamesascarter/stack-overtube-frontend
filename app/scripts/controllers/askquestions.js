@@ -1,27 +1,15 @@
 'use strict';
 
-app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
+app.controller('AskquestionsCtrl', function($scope, AskquestionService, $location) {
 
-  $scope.addQuestion = function () {
-    console.log($scope.title);
-    console.log($scope.description);
-    console.log($scope.codesnippet);
-    console.log($scope.github);
-    var url = "https://overtube-backend.herokuapp.com/askquestion";
+  $scope.addQuestion = function() {
     var question = {
-      					title: $scope.title,
-      					description: $scope.description, 
-      					codeSnippet: $scope.codesnippet, 
-      					githubRepo: $scope.github 
-    					};
-    $http.post(url, question)
-    	.success(function() {
-    		alert("Question posted!");
-    	});
-    	// .error(function() {
-    	// 	alert("An error has ocurred!")
-    	// });
+                     title: $scope.title,
+                     description: $scope.description, 
+                     codeSnippet: $scope.codesnippet, 
+                     githubRepo: $scope.github 
+                    };
+    AskquestionService.addQuestion(question);
     $location.path('/questions');
-  };
-
+  }
 });

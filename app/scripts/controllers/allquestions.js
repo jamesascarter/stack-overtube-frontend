@@ -2,7 +2,7 @@
 
 angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http) {
 
-  var getQuestions = function () {
+  $scope.getQuestions = function () {
     return $http.get('https://overtube-backend.herokuapp.com/allquestions').then(function(response) {
       $scope.questions = response.data;
     return response;
@@ -11,7 +11,7 @@ angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($sco
 
   $scope.sortorder = '-views'
 
-  getQuestions();
+  $scope.getQuestions();
 
   $scope.upVoteQuestion = function(question) {
     question.votes++;
