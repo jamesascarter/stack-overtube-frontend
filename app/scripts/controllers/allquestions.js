@@ -9,6 +9,8 @@ angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($sco
    })
   };
 
+  $scope.test = 11// only to verify test tools are linked, needs to be deleted
+
   $scope.sortorder = '-views'
 
   getQuestions();

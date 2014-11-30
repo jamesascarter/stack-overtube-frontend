@@ -20,8 +20,11 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-resource/angular-resource.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'app/scripts/app.js',
+      'app/scripts/app.config.js',
       'app/scripts/**/*.js',
-      'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
 
@@ -40,11 +43,12 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      'Chrome'
     ],
 
     // Which plugins to enable
     plugins: [
+      'karma-chrome-launcher',
       'karma-phantomjs-launcher',
       'karma-jasmine'
     ],
