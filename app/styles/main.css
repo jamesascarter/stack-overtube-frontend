@@ -130,7 +130,7 @@ body:after {
 }
 
 #question-title {
-  padding-left: 20px;
+/*  padding-left: 20px;*/
   font-size: 30px;
   color: black;
   text-decoration: none;
@@ -258,8 +258,6 @@ body:after {
 }
 
 #navbar-custom {
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-radius: 12px;
   color: grey;
   font-size: 13px;
@@ -330,7 +328,7 @@ ul {
   margin: 0;
   padding-left: 40px;
   padding-right: 40px;
-/*  max-width: 300px;*/
+  padding-bottom: 40px;
 }
 
 #craig-img {
@@ -339,8 +337,7 @@ ul {
   margin: 0;
   padding-left: 40px;
   padding-right: 40px;
-/*  max-width: 300px;*/
-
+  padding-bottom: 40px;
 }
 
 #anna-img {
@@ -349,8 +346,7 @@ ul {
   margin: 0;
   padding-left: 40px;
   padding-right: 40px;
-/*  max-width: 300px;*/
-
+  padding-bottom: 40px;
 }
 
 #pablo-img {
@@ -359,11 +355,26 @@ ul {
   margin: 0;
   padding-left: 40px;
   padding-right: 40px;
-/*  max-width: 300px;*/
-
+  padding-bottom: 40px;
 }
 
 #about-us-images {
   display: inline;
 }
+
+.nav-pills {
+  padding-top: 10px;
+}
+
+#created-at {
+  padding-left: 10px;
+  float: left;
+  text-align: left;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 2px;
+  padding-right: 10px;
+}
+
 
