@@ -1,7 +1,5 @@
 'use strict';
 
-var stackOverTube = angular.module('stackOverTubeApp.services', []);
-
 app.factory('AskquestionService', function ($http) {
 
   return{
