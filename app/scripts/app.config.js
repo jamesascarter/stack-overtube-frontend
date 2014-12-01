@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('stackOverTubeApp').config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+angular.module('stackOverTubeApp').config(['$urlRouterProvider', '$stateProvider', '$sceProvider', function($urlRouterProvider, $stateProvider, $sceProvider) {
 
+  $sceProvider.enabled(false);
   $urlRouterProvider.otherwise('/');
 
 
