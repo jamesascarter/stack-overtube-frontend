@@ -1,11 +1,13 @@
 /* Space out content a bit */
 body {
 /*  padding-top: 20px;*/
-/*  background-image: url("/../app/images/code.jpg");*/
- /* opacity: 0.6;*/
+ /* background-image: url("/../app/images/grey.jpg");*/
+  /*background-position: center;*/
+  background-size: 100%;
   padding-bottom: 20px;
   background-color: black;
   background-repeat: repeat-y;
+
 }
 
 body:after {
@@ -16,7 +18,7 @@ body:after {
     left: 0;
  /*   background-image: url("/../app/images/background.jpg");
     background-repeat: repeat-x;*/
-    background-color: black;
+ /*   background-color: black;*/
     width: 100%;
     height: 100%;
   /*  opacity : 0.8;*/
@@ -274,7 +276,7 @@ body:after {
 
 .well {
   text-align: center;
-  min-height: 200px;
+  min-height: 250px;
   max-height: 300px;
   border-radius: 25px;
   border-color: black;
