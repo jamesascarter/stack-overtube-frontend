@@ -9,9 +9,9 @@ app.config(function($authProvider) {
   // console.log('app.jsssss');
   $authProvider.github({
    clientId: 'c601624f82fe9a29a57d',
-    url: '/auth/github?',
+    url: '/auth/github?hello=name',
     authorizationEndpoint: 'https://github.com/login/oauth/authorize',
-    redirectUri: window.location.origin + '/callback',
+    redirectUri: window.location.origin,
     scope: [],
     scopeDelimiter: ' ',
     type: '2.0',

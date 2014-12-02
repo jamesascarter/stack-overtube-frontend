@@ -1,0 +1,18 @@
+<form ng-controller="UserAuthenticationCtrl" ng-submit="authenticate(session)">
+  <div>
+    <label for="session.login">Personal e-mail address:</label>
+    <input type="email" id="session.login" ng-model="session.login" required />
+  </div>
+
+  <div>
+    <label for="session.password">Password:</label>
+    <input type="password" id="session.password" ng-model="session.password" required />
+  </div>
+
+  <div>
+    <button type="submit">Sign in</button>
+    <label for="session.remember">
+      <input type="checkbox" id="session.remember" ng-model="session.remember" /> Remember me
+    </label>
+  </div>
+</form>
