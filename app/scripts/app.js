@@ -2,4 +2,4 @@
 
 
 var app = angular
-  .module('stackOverTubeApp', ['ui.router']);
+  .module('stackOverTubeApp', ['ui.router', 'ngSanitize']);
