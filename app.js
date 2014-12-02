@@ -22,20 +22,3 @@ app.get('/', function(req, res){
   res.render('index')
 });
 
-// app.post('/videos', function(req, res) {
-// 	// console.log(req.body);
-// 	// console.log(req.body.replies);
-// 	var questionId = req.body.questionId;
-// 	var video = req.body.replies[0];
-// 	console.log(video.link);
-	
-// 	s3.getObject(({Bucket: 'stackovertubeTwo', Key: video.link}), function(err, data) {
-// 		if (err) {
-//       console.log("Error uploading data: ", err);
-//     } else {
-//       console.log(data.Body);
-//       res.send(data.Body);
-//     }
-// 	});
-	
-// });
