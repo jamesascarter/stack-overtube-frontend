@@ -6,13 +6,12 @@ app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
     console.log($scope.title);
     console.log($scope.description);
     console.log($scope.codesnippet);
-    console.log($scope.github);
     var url = "https://overtube-backend.herokuapp.com/askquestion";
     var question = {
       					title: $scope.title,
-      					description: $scope.description, 
-      					codeSnippet: $scope.codesnippet, 
-      					githubRepo: $scope.github 
+      					description: $scope.description,
+      					codeSnippet: $scope.codesnippet,
+      					githubRepo: $scope.github
     					};
     $http.post(url, question)
     	.success(function() {
