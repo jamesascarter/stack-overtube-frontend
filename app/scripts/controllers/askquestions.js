@@ -10,9 +10,10 @@ app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
     var url = "https://overtube-backend.herokuapp.com/askquestion";
     var question = {
       					title: $scope.title,
-      					description: $scope.description, 
-      					codeSnippet: $scope.codesnippet, 
-      					githubRepo: $scope.github 
+      					description: $scope.description,
+      					codeSnippet: $scope.codesnippet,
+      					githubRepo: $scope.github,
+                author: ''
     					};
     $http.post(url, question)
     	.success(function() {

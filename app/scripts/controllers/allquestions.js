@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http) {
+angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($scope,$http, $location) {
 
   var getQuestions = function () {
     return $http.get('https://overtube-backend.herokuapp.com/allquestions').then(function(response) {
@@ -14,7 +14,10 @@ angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($sco
   getQuestions();
 
   $scope.upVoteQuestion = function(question) {
-    question.votes++;
+    // return question.votes++;
+    return $http.post('https://overtube-backend.herokuapp.com/upquestionvotes/'+ question.id).then(function(err, response) {
+       question.votes++;
+    });
   };
 
   $scope.upViewQuestion = function(question) {
