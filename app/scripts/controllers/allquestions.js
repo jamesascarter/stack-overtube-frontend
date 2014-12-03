@@ -20,5 +20,6 @@ angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($sco
   $scope.upViewQuestion = function(question) {
     question.views++;
   };
+
 });
 

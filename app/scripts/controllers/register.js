@@ -2,7 +2,7 @@
 
 app.controller('RegisterCtrl', function ($scope, $http, $location) {
 
-      $scope.register = function () {
+     	$scope.register = function () {
         console.log($scope.firstName);
         console.log($scope.lastName);
         console.log($scope.username);

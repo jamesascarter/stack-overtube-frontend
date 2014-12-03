@@ -1,4 +1,3 @@
-<div id="questions-page">
 <h1 id="questions-title">Questions</h1>
 
 
@@ -13,18 +12,18 @@
 
 <input type="text" style="float:right;" ng-model="query" placeholder="Search"> -->
 </br>
-</br>
+  </br>
       <ul class="thumbnails" id="question-snippets">
         <li ng-repeat="question in questions | orderBy:sortorder| filter:query">
           <div class="question-display">
             <div class="well span9">
               <a href="#/question/{{question.id}}" ng-click="upViewQuestion(question)" class="well-title" id="question-title">{{question.title}}</a>
-              <hr>
+            
               <br>
-              <p>{{question.description}}</p>
+             <!--  <p>{{question.description}}</p>
               <p id="created-at">Posted at: <br>{{question.createdAt}}
                 <br>
-                By: {{question.UserId}}</p>  
+                By: {{question.UserId}}</p>  --> 
             <!--   <div style="float:left; padding: 10px; vertical-align: middle;"><a href="" class="btn btn-success">{{question.views}}</a><p>Views</p></div> -->
              <!--  <div ng-click="upVoteQuestion(question)" style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{question.votes}}</a><p>Votes</p></div>
               <div style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{question.numberAnswers}}</a><p>Videos</p></div> -->
@@ -38,9 +37,9 @@
               <!--  <p id="question-lastreply">{{question.lastReply}}</p>
                <br /> -->
              <!--  <div class="row"> -->
-              <!-- <div ng-repeat="tag in question.tags"> -->
-              <!--   <a style="float:right; padding: 5px; margin: 5px; vertical-align: middle;" href="" class="btn btn-primary btn-xs">{{tag.name}}</a> -->
-            <!--   </div> -->
+            <!--   <div ng-repeat="tag in question.tags">
+                <a style="float:right; padding: 5px; margin: 5px; vertical-align: middle;" href="" class="btn btn-primary btn-xs">{{tag.name}}</a>
+              </div> -->
 
 
               </div>

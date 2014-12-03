@@ -18,34 +18,37 @@
     <link rel="stylesheet" href="app/styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="stackOverTubeApp">
+
+  <body ng-app="stackOverTubeApp" ng-class="controller">
+
+     <video id="bgVideo" autoplay loop muted>
+      <source src="app/video/fbvid.webm" type="video/webm">
+    </video>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
 
-
-
     <div class="container">
       <div class="main-navbar">
         <ul class="nav nav-pills pull-right">
           <li><a id="navbar-custom" ui-sref="questions">QUESTIONS</a></li>
           <li><a id="navbar-custom"  ui-sref="askquestion">ASK A QUESTION</a></li>
-          <li><a id="navbar-custom"  ui-sref="tags">TAGS</a></li>
-          <li><a id="navbar-custom"  ui-sref="allvideos">ALL VIDEOS</a></li>
-          <li><a id="navbar-custom"  ui-sref="unanswered">UNANSWERED</a></li>
+      <!--     <li><a id="navbar-custom"  ui-sref="tags">TAGS</a></li> -->
+       <!--    <li><a id="navbar-custom"  ui-sref="allvideos">ALL VIDEOS</a></li> -->
+        <!--   <li><a id="navbar-custom"  ui-sref="unanswered">UNANSWERED</a></li> -->
           <li><a id="navbar-custom"  ui-sref="register">REGISTER</a></li>
           <li><a id="navbar-custom"  ui-sref="aboutus">ABOUT US</a></li>
         </ul>
         <a ng-href="#"><img id="logo" src="app/images/codepng.png"></a>
       </div>
 
-      <div id="spacer" ui-view>
+      <div ui-view>
         <div class="home-section">
           <img id="logo-big" src="app/images/codepng.png"> 
           <h2 id="tagline">Welcome to stackovertube</h2>
-          <h4 id="tagline">Stackovertube is a question and video solution site for professional and enthusiast programmers.</h4>
+          <h4 id="tagline">Stackovertube is a question and video solution site<br> for professional and enthusiast programmers.</h4>
           <div id="button-section">
             <button ui-sref="askquestion" id="home-ask-button" class="btn btn-default btn-lg">Ask a Question</button>
             <br>
