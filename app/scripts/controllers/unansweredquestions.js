@@ -30,5 +30,4 @@ angular.module('stackOverTubeApp').controller('UnansweredquestionsCtrl', functio
   $scope.upViewQuestion = function(question) {
     question.views++;
   };
-
 });

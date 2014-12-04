@@ -13,6 +13,5 @@ angular.module('stackOverTubeApp')
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
-    ];
-    
+    ];  
   });

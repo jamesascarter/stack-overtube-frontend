@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-
-    $(".player").mb_YTPlayer();
+	
+  $(".player").mb_YTPlayer();
 
 });
