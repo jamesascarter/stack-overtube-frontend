@@ -3,6 +3,9 @@
 app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
 
   $scope.addQuestion = function () {
+
+if ($scope.myform.$valid) {
+
     console.log($scope.title);
     console.log($scope.description);
     console.log($scope.codesnippet);
@@ -19,5 +22,9 @@ app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
   		alert("Question posted!");
       $location.path('/questions');
     });    
+}
+  else {
+    console.log("Form not valid");
+    }
   };
 });

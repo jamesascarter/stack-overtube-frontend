@@ -246,6 +246,15 @@ body.question:after {
   text-align: center;
 }
 
+
+#ask-question-form.ng-invalid {
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+
+
 #question-button {
   padding: 10px 15px;
   background: #4479BA;
@@ -261,6 +270,16 @@ body.question:after {
   height: 45px;
   opacity: 0.5;
 }
+
+/*#input.ng-valid {
+  border: 1px solid #000000; 
+  border-color: grey;
+  text-align: center;
+  width: 500px;
+  height: 45px;
+  opacity: 0.5;
+  background-color: #2EFF77;
+}*/
 
 #input:hover {
   border: 1px solid #000000; 
@@ -278,7 +297,67 @@ body.question:after {
   transition:.5s;
 }
 
+/*#input-codesnippet {
+  border: 1px solid #000000; 
+  border-color: grey;*/
+/*  text-align: center;*/
+/*  width: 500px;
+  height: 200px;
+  opacity: 0.5;
+}*/
+
+
+/*#input-codesnippet:hover {
+  border: 1px solid #000000; */
+/*  border-color: grey;*/
+/*  text-align: center;*/
+/*  width: 500px;
+  opacity: 0.7;
+  height: 200px;*/
+/*
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;*/
+  /* ...and now for the proper property */
+/*  transition:.5s;
+}*/
+
+
 #input-description {
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+/*  text-align: center;*/
+  border: 1px solid #000000; 
+  height: 200px;
+  width: 500px;
+  opacity: 0.5;
+}
+
+#input-codesnippet {
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+/*  text-align: center;*/
+  border: 1px solid #000000; 
+  height: 200px;
+  width: 500px;
+  opacity: 0.5;
+}
+
+#input-description::-webkit-input-placeholder { text-align: center;
+padding-top: 75px; }
+
+#input-codesnippet::-webkit-input-placeholder { 
+  text-align: center;
+  padding-top: 75px; 
+/*padding-top: 75px; */
+}
+/*
+#input-description.ng-valid {
      width: 100%; 
      box-sizing: border-box;
      -webkit-box-sizing:border-box;
@@ -288,10 +367,27 @@ body.question:after {
   height: 200px;
   width: 500px;
   opacity: 0.5;
-}
+  background-color: #2EFF77;
+}*/
+
+
 
 #input-description:hover {
-  text-align: center;
+/*  text-align: center;*/
+  border: 1px solid #000000; 
+  height: 200px;
+  width: 500px;
+  opacity: 0.7;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+#input-codesnippet:hover {
+/*  text-align: center;*/
   border: 1px solid #000000; 
   height: 200px;
   width: 500px;
@@ -383,7 +479,7 @@ body.question:after {
 
 .well {
   text-align: center;
-  min-height: 150px;
+  min-height: 200px;
   max-height: 200px;
 /*  border-radius: 25px;*/
   border-color: black;
@@ -549,3 +645,17 @@ video#bgVideo {
   padding-right: 300px;
 }
 
+
+.ask-question-form.ng-invalid {
+   background: red;
+ }
+
+#q-desc {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  line-height: 15px;
+  position: relative;
+}
