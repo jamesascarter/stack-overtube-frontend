@@ -1,58 +1,80 @@
-<div id="main-question-part">
-  <div class="well">
-    <h1>{{question.title}}</h1>
-      <p>{{question.description}}</p>
-        <div id="snippet2"> Code Snippet:  <br />{{question.codeSnippet}}<br />
-  </div>
-  <p>Clone this GitHub repo: {{question.githubRepo}}</p>
-  <p id="created-at">Posted {{question.createdAt|timeago}}</p>
-  <p id="author">Author: {{username}}<p>
 
-</div>
-<!-- <ul class="nav nav-pills"> -->
-<div>
-  <li style="float:right"><p>Votes<span class="badge">{{question.votes}}</span></p></li>
-  <li style="float:right"><p>Answers: <span class="badge">{{replies.length}}</span></p></li>
+<div id="main-question-part">
+  <div class="question-main">
+    <h1>{{question.title}}</h1>
+    <br>
+    <br>
+    <p id="clone-repo-title">Question:<p>
+      <p>{{question.description}}</p>
+      <br>
+        <p id="clone-repo-title"> Code Snippet:  </p>
+        <p> {{question.codeSnippet}}<br />
+          <br>
+
+  <p id="clone-repo-title">Clone this GitHub repo: <br></p>
+    <p><a href="{{question.githubRepo}}">{{question.githubRepo}}</a></p>
+    <br>
+    <br>
+    <br>
+
+  <div style="float:left; padding: 10px; vertical-align: middle;"><a href="" class="btn btn-success">{{question.views}}</a><p>Views</p></div>
+  <div ng-click="upVoteQuestion(question)" style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{question.votes}}</a><p>Votes</p></div>
+              <div style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{replies.length}}</a><p>Videos</p></div>
+  <p id="author-question">Author: <span id="author-name">{{username}}</span></p>
+    <br>
+  <p id="created-at">Posted {{question.createdAt|timeago}}</p>
+
+  <!-- <li style="float:right"><p>Votes<span class="badge">{{question.votes}}</span></p></li> -->
+  <!-- <li style="float:right"><p>Answers: <span class="badge">{{replies.length}}</span></p></li> -->
 <!--   <li style="float:right"><p>Author: {{username}}<span class="badge"></span></p></li> -->
 <!--   <li style="float:right"><p>Posted {{question.createdAt|timeago}}<span class="badge"></span></p></li> -->
-  <li style="float:right"><p>Views: {{question.views}}<span class="badge"></span></p></li>
-</ul>
+  <!-- <li style="float:right"><p>Views: {{question.views}}<span class="badge"></span></p></li> -->
+<!-- </ul> -->
+    </div>
+  <div>
 </div>
+<!-- <ul class="nav nav-pills"> -->
 
-  <button class="btn btn-default" id="currentUser" type="button">james</button>
+<!--   <button class="btn btn-default" id="currentUser" type="button">james</button>
   <button class="btn btn-default" id="numAnswers" type="button">{{replies.length}}</button>
-  <button class="btn btn-default" id="questionId" type="button">{{question.id}}</button>
-  <button class="btn btn-default" id="downloadExtension" type="button">Download Extension</button>
-  <button class="btn btn-default" id="reply" type="button">Reply</button>
+  <button class="btn btn-default" id="questionId" type="button">{{question.id}}</button> -->
+  <!-- <button class="btn btn-default" id="downloadExtension" type="button">Download Extension</button> -->
+  <br>
+  <center><button class="btn btn-default" id="reply" type="button">Reply</button></center>
 <br />
 <!-- <div ng-cloak class="alert alert-dismissable alert-warning">
   <button type="button" class="close" data-dismiss="alert">×</button>
   <h4>{{question.githubRepo}}</h4> -->
 <!--   <p> <a href="#" class="alert-link">The project codebase can be found in this repository.</a>.</p> -->
-  <ul id="videos">
-    <li ng-repeat="reply in replies">
-<!--       <p>{{reply.link}}</p> -->
-      <video width="320" height="240" controls ng-src={{reply.link}} ></video>
-      <p>Posted: {{reply.createdAt|timeago}}<p>
-    </li>
-  </ul>
-</div>
+<section id="replies-section">
+  <h1>Answers</h1>
+    <ul id="videos">
+      <li ng-repeat="reply in replies">
+  <!--       <p>{{reply.link}}</p> -->
+        <video width="500" height="375" controls ng-src={{reply.link}} ></video>
+        <p>Posted: {{reply.createdAt|timeago}}<p>
+          <p >Author: {{username}}<p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
   <br />
-  <div class="alert alert-dismissable alert-warning">
+<!--   <div class="alert alert-dismissable alert-warning">
     <button type="button" class="close" data-dismiss="alert">×</button>
     <h4>{{question.githubRepo}}</h4>
     <p> <a href="#" class="alert-link">The project codebase can be found in this repository.</a>.</p>
   </div>
   </div>
-
+ -->
   <br />
  <!--  <div class="alert alert-dismissable alert-warning"> -->
- <div id="github-link-wrapper">
+ <!-- <div id="github-link-wrapper">
    <div id="question-github-link">
-    <!--   <button type="button" class="close" data-dismiss="alert">×</button> -->
+      <button type="button" class="close" data-dismiss="alert">×</button>
       <h4>{{question.githubRepo}}</h4>
       <p> <a href="#" >The project codebase can be found in this repository.</a></p>
-    </div>
+    </div> -->
    <!--  </div> -->
   </div>
