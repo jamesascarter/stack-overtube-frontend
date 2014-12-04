@@ -549,7 +549,7 @@ background-color: #89AAFF;
 .well {
   text-align: center;
   min-height: 200px;
-  max-height: 200px;
+/*  max-height: 200px;*/
 /*  border-radius: 25px;*/
   border-color: black;
   background-color: #89AAFF;

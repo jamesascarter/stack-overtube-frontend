@@ -1,43 +1,39 @@
-
-</br>
-  <div id="main-question-part">
-    <div class="well">
-      <h1>{{question.title}}</h1>
-       <p>{{question.description}}</p>
-    </div>
+<div id="main-question-part">
+  <div class="well">
+    <h1>{{question.title}}</h1>
+      <p>{{question.description}}</p>
+        <div id="snippet2"> Code Snippet:  <br />{{question.codeSnippet}}<br />
   </div>
+  <p>Clone this GitHub repo: {{question.githubRepo}}</p>
+  <p id="created-at">Posted {{question.createdAt|timeago}}</p>
+  <p id="author">Author: {{username}}<p>
+
+</div>
 <!-- <ul class="nav nav-pills"> -->
 <div>
   <li style="float:right"><p>Votes<span class="badge">{{question.votes}}</span></p></li>
   <li style="float:right"><p>Answers: <span class="badge">{{replies.length}}</span></p></li>
-  <li style="float:right"><p>Author: {{username}}<span class="badge"></span></p></li>
-  <li style="float:right"><p>Posted {{question.createdAt|timeago}}<span class="badge"></span></p></li>
+<!--   <li style="float:right"><p>Author: {{username}}<span class="badge"></span></p></li> -->
+<!--   <li style="float:right"><p>Posted {{question.createdAt|timeago}}<span class="badge"></span></p></li> -->
   <li style="float:right"><p>Views: {{question.views}}<span class="badge"></span></p></li>
 </ul>
 </div>
 
-  <div id="code-snippet-part">
-    <div id="snippet2">
-    Code Snippet:
-    <br />
-    {{question.codeSnippet}}
-    <br />
-  </div>
-</div>
   <button class="btn btn-default" id="currentUser" type="button">james</button>
   <button class="btn btn-default" id="numAnswers" type="button">{{replies.length}}</button>
   <button class="btn btn-default" id="questionId" type="button">{{question.id}}</button>
   <button class="btn btn-default" id="downloadExtension" type="button">Download Extension</button>
   <button class="btn btn-default" id="reply" type="button">Reply</button>
 <br />
-<div ng-cloak class="alert alert-dismissable alert-warning">
+<!-- <div ng-cloak class="alert alert-dismissable alert-warning">
   <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>{{question.githubRepo}}</h4>
-  <p> <a href="#" class="alert-link">The project codebase can be found in this repository.</a>.</p>
+  <h4>{{question.githubRepo}}</h4> -->
+<!--   <p> <a href="#" class="alert-link">The project codebase can be found in this repository.</a>.</p> -->
   <ul id="videos">
     <li ng-repeat="reply in replies">
-      <p>{{reply.link}}</p>
+<!--       <p>{{reply.link}}</p> -->
       <video width="320" height="240" controls ng-src={{reply.link}} ></video>
+      <p>Posted: {{reply.createdAt|timeago}}<p>
     </li>
   </ul>
 </div>
