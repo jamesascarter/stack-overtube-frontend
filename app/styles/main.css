@@ -27,11 +27,11 @@ body:after {
     opacity: 0.8;
     z-index: -1;
 
-  -webkit-filter: blur(5px);
+/*  -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px) ;
   -ms-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(5px);*/
 }
 
 body.questions #bgVideo {
@@ -59,23 +59,67 @@ body.unanswered #bgVideo {
 }
 
 body.questions:after {
-/*background: url("/../app/images/background.png");*/
+/*background: url("/../app/images/tweetmap.png");
+background-size: 100% 100%;*/
+/*background-repeat: repeat-x;
+background-repeat: repeat-y;*/
+/*padding-top: 1000px;*/
 }
 
-body.askquestion:after {
-/*background: url("/../app/images/background.png");*/
+body.questions {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
 }
 
-body.register:after {
-/*background: url("/../app/images/background.png");*/
+body.askquestion {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+body.unanswered {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+body.register {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+body.question {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
 }
 
 body.aboutus:after {
-/*background: url("/../app/images/background.png");*/
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
 }
 
-body.question:after {
-/*background: url("/../app/images/background.png");*/
+body.question {
+  background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+body.aboutus {
+    background: url("/../app/images/tweetmap2.png");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
 }
 
 
@@ -264,12 +308,21 @@ body.question:after {
 
 #input {
   border: 1px solid #000000; 
+  color: white;
   border-color: grey;
   text-align: center;
   width: 500px;
   height: 45px;
-  opacity: 0.5;
+  background-color: #89AAFF; 
+  opacity: 0.7;
 }
+
+#input::-webkit-input-placeholder 
+  { 
+  text-align: center;
+  font-weight: bold;
+/*  padding-top: 75px;*/
+  color: white }
 
 /*#input.ng-valid {
   border: 1px solid #000000; 
@@ -284,9 +337,11 @@ body.question:after {
 #input:hover {
   border: 1px solid #000000; 
 /*  border-color: grey;*/
+  color: white;
   text-align: center;
   width: 500px;
-  opacity: 0.7;
+    background-color: white;
+  opacity: 1;
   height: 45px;
 
     -o-transition:.5s;
@@ -329,11 +384,12 @@ body.question:after {
      box-sizing: border-box;
      -webkit-box-sizing:border-box;
      -moz-box-sizing: border-box;
-/*  text-align: center;*/
-  border: 1px solid #000000; 
-  height: 200px;
-  width: 500px;
-  opacity: 0.5;
+    /*  text-align: center;*/
+    background-color: #89AAFF; 
+      border: 1px solid #000000; 
+      height: 200px;
+      width: 500px;
+      opacity: 0.7;
 }
 
 #input-codesnippet {
@@ -342,17 +398,24 @@ body.question:after {
      -webkit-box-sizing:border-box;
      -moz-box-sizing: border-box;
 /*  text-align: center;*/
+background-color: #89AAFF; 
   border: 1px solid #000000; 
   height: 200px;
   width: 500px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
-#input-description::-webkit-input-placeholder { text-align: center;
-padding-top: 75px; }
+#input-description::-webkit-input-placeholder 
+  { 
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 75px; }
 
 #input-codesnippet::-webkit-input-placeholder { 
   text-align: center;
+  color: white;
+  font-weight: bold;
   padding-top: 75px; 
 /*padding-top: 75px; */
 }
@@ -377,7 +440,8 @@ padding-top: 75px; }
   border: 1px solid #000000; 
   height: 200px;
   width: 500px;
-  opacity: 0.7;
+    background-color: white;
+  opacity: 1;
     -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -391,7 +455,8 @@ padding-top: 75px; }
   border: 1px solid #000000; 
   height: 200px;
   width: 500px;
-  opacity: 0.7;
+  background-color: white;
+  opacity: 1;
     -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -401,7 +466,7 @@ padding-top: 75px; }
 }
 
 #ask-question-title {
-  color: grey;
+  color: white;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -433,15 +498,16 @@ padding-top: 75px; }
 }
 
 #home-ask-button {
+  background-color: #89AAFF;
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.6;
   border: none;
 }
 
 #home-ask-button:hover {
   text-align: center;
   opacity: 0.8;
-  color: grey;
+  color: white;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -455,15 +521,18 @@ padding-top: 75px; }
   padding-bottom: 50px;
 }
 
+
+
 #navbar-custom {
-  color: grey;
+  color: #89AAFF;
   font-size: 13px;
   /*background-color: black;*/
 }
 
 #navbar-custom:hover {
-
-  opacity: 0.5;
+  background-color: grey;
+  color: #89AAFF;
+  /*opacity: 0.5;*/
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -483,12 +552,12 @@ padding-top: 75px; }
   max-height: 200px;
 /*  border-radius: 25px;*/
   border-color: black;
-  background-color: grey;
-  opacity: 0.7;
+  background-color: #89AAFF;
+  opacity: 0.9;
 }
 
 #questions-title {
-  color: grey;
+  color: white;
   padding-top: 40px;
   text-align: center;
 }
@@ -530,6 +599,7 @@ ul {
 }
 
 #james-img {
+  display: inline-block;
   color: white;
   text-align: center;
   margin: 0;
@@ -539,6 +609,7 @@ ul {
 }
 
 #craig-img {
+  display: inline-block;
   color: white;
   text-align: center;
   margin: 0;
@@ -548,6 +619,7 @@ ul {
 }
 
 #anna-img {
+  display: inline-block;
   color: white;
   text-align: center;
   margin: 0;
@@ -557,6 +629,7 @@ ul {
 }
 
 #pablo-img {
+  display: inline-block;
   color: white;
   text-align: center;
   margin: 0;
@@ -577,8 +650,8 @@ ul {
   padding-left: 10px;
   float: right;
   text-align: left;
-  border: solid;
-  border-color: black;
+ /* border: solid;
+  border-color: black;*/
 /*  border-radius: 10px;*/
   border-width: 2px;
   padding-right: 10px;
@@ -610,8 +683,8 @@ ul {
 }
 
 video#bgVideo {
- opacity: 0.5;
- padding-top: 50px;
+/* opacity: 0.5;*/
+/* padding-top: 50px;*/
   position: absolute; // Play the video in full screen mode
   top: 0px; 
   left: 0px; 
@@ -619,7 +692,7 @@ video#bgVideo {
   min-height: 100%;
   z-index: -1;
 
-/*-webkit-filter: blur(4px) grayscale(100%);
+/*-webkit-filter: blur(4px) grayscale(60%);
   -moz-filter: blur(5px);
   -o-filter: blur(5px) ;
   -ms-filter: blur(5px);
@@ -658,4 +731,24 @@ video#bgVideo {
   white-space: nowrap;  
   line-height: 15px;
   position: relative;
+}
+
+.btn-success {
+  background-color: #B4AAFF;
+  border: solid white 1px;
+}
+
+#order-by {
+  display: inline-block;
+  color: white;
+}
+
+#searchbar {
+  display: inline-block;
+  width: 23%;
+  height: 40px;
+}
+
+#searchbarwrapper {
+  
 }

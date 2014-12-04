@@ -3,14 +3,16 @@
 
     <div  ng-controller="AllquestionsCtrl">
 
-
+  <div id="order-by">
       Order By:
       <select ng-model="sortorder" class="input-small">
           <option selected value="-views">Views</option>
           <option value="-votes">Votes</option>
       </select>
-
-<input type="text" style="float:right;" ng-model="query" placeholder="Search">
+   </div>
+<div id="searchbarwrapper">
+<input id="searchbar" type="text" ng-model="query" placeholder="Search">
+</div>
 </br>
   </br>
       <ul class="thumbnails" id="question-snippets">
