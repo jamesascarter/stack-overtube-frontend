@@ -18,10 +18,10 @@
           <div class="question-display">
             <div class="well span9">
               <a href="#/question/{{question.id}}" ng-click="upViewQuestion(question)" class="well-title" id="question-title">{{question.title}}</a>
-            
+
               <br>
               <p>Text: {{question.description.substring(0, 170)}}</p>
-              <p id="created-at">Posted at: <br>{{question.createdAt}}
+              <p id="created-at">Posted {{question.createdAt|timeago}}
                 <br>
 <!--                 By: {{question.UserId}}</p>  -->
               <div style="float:left; padding: 10px; vertical-align: middle;"><a href="" class="btn btn-success">{{question.views}}</a><p>Views</p></div>

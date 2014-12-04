@@ -3,7 +3,7 @@
 
 var app = angular
 
-  .module('stackOverTubeApp', ['ui.router', 'ngSanitize']);
+  .module('stackOverTubeApp', ['ui.router', 'ngSanitize', 'ngtimeago']);
 
 	app.run(function($rootScope) {
 	  $rootScope.$on('$stateChangeStart', function(scope,state) {
