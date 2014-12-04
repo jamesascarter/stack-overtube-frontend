@@ -10,7 +10,7 @@ angular.module('stackOverTubeApp').config(['$urlRouterProvider', '$stateProvider
 
   .state('questions', {
     url: '/questions',
-    templateUrl: 'app/views/questions.html'
+    templateUrl: 'app/views/allquestions.html'
   })
 
   .state('askquestion', {

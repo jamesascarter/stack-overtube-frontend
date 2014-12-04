@@ -54,6 +54,10 @@ body.aboutus #bgVideo {
   display: none;
 }
 
+body.unanswered #bgVideo {
+  display: none;
+}
+
 body.questions:after {
 /*background: url("/../app/images/background.png");*/
 }

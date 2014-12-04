@@ -15,14 +15,16 @@ angular.module('stackOverTubeApp').controller('AllquestionsCtrl', function ($sco
 
   $scope.upVoteQuestion = function(question) {
     // return question.votes++;
-    return $http.post('https://overtube-backend.herokuapp.com/upquestionvotes/'+ question.id).then(function(err, response) {
+    return $http.post('https://overtube-backend.herokuapp.com/upquestionvotes/'+ question.id).then(function(err, res) {
        question.votes++;
     });
   };
 
   $scope.upViewQuestion = function(question) {
+    return $http.post('https://overtube-backend.herokuapp.com/upquestionviews/'+ question.id).then(function(err, res) {
     question.views++;
-  };
+  });
+  }
 
 });
 
