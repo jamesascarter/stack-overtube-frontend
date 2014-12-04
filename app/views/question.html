@@ -7,11 +7,14 @@
     </div>
   </div>
 <!-- <ul class="nav nav-pills"> -->
-  <!-- <li class="active"><a href="#">Votes<span class="badge">{{question.votes}}</span></a></li> -->
-<!--   <li style="float:right"><a href="#">Answers:<span class="badge">{{question.numberAnswers}}</span></a></li> -->
- <!--  <li style="float:right"><a href="#">{{user.username}}<span class="badge"></span></a></li> -->
-<!--   <li><a href="#">{{question.createdAt}}<span class="badge"></span></a></li> -->
-<!-- </ul> -->
+<div>
+  <li class="active"><p>Votes<span class="badge">{{question.votes}}</span></p></li>
+  <li style="float:right"><p>Answers: <span class="badge">{{replies.length}}</span></p></li>
+  <li style="float:right"><p>Author: {{username}}<span class="badge"></span></p></li>
+  <li style="float:right"><p>Added on: {{question.createdAt}}<span class="badge"></span></p></li>
+  <li style="float:right"><p>Views: {{question.views}}<span class="badge"></span></p></li>
+</ul>
+</div>
 
   <div id="code-snippet-part">
     <div id="snippet2">
