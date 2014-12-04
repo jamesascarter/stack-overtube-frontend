@@ -443,7 +443,7 @@ padding-top: 75px; }
 
 .well {
   text-align: center;
-  min-height: 150px;
+  min-height: 200px;
   max-height: 200px;
 /*  border-radius: 25px;*/
   border-color: black;
@@ -613,3 +613,13 @@ video#bgVideo {
 .ask-question-form.ng-invalid {
    background: red;
  }
+
+#q-desc {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  line-height: 15px;
+  position: relative;
+}

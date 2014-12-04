@@ -20,13 +20,13 @@
               <a href="#/question/{{question.id}}" ng-click="upViewQuestion(question)" class="well-title" id="question-title">{{question.title}}</a>
             
               <br>
-             <!--  <p>{{question.description}}</p>
-              <p id="created-at">Posted at: <br>{{question.createdAt}}
+              <p >{{question.description | limitTo: 80}}{{question.description.length > 80 ? '...' : ''}}</p>
+          <!--     <p id="created-at">Posted at: <br>{{question.createdAt}}
                 <br>
 
                 By: {{question.UserId}}</p>
 
-                By: {{question.UserId}}</p>  --> 
+                By: {{question.UserId}}</p>   -->
             <!--   <div style="float:left; padding: 10px; vertical-align: middle;"><a href="" class="btn btn-success">{{question.views}}</a><p>Views</p></div> -->
               <div ng-click="upVoteQuestion(question)" style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{question.votes}}</a><p>Votes</p></div>
               <div style="float:left; padding: 10px;vertical-align: middle;"><a href="" class="btn btn-success">{{question.numberAnswers}}</a><p>Videos</p></div>
