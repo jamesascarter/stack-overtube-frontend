@@ -15,14 +15,9 @@ app.controller('AskquestionsCtrl', function ($scope, $http, $location) {
       					githubRepo: $scope.github,
                 author: ''
     					};
-    $http.post(url, question)
-    	.success(function() {
+    $http.post(url, question).then(function() {
     		alert("Question posted!");
-    	});
-    	// .error(function() {
-    	// 	alert("An error has ocurred!")
-    	// });
-    $location.path('/questions');
+        $location.path('/questions');
+    	});    
   };
-
 });
