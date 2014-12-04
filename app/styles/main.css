@@ -293,6 +293,33 @@ body.question:after {
   transition:.5s;
 }
 
+#input-codesnippet {
+  border: 1px solid #000000; 
+  border-color: grey;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  opacity: 0.5;
+}
+
+
+#input-codesnippet:hover {
+  border: 1px solid #000000; 
+/*  border-color: grey;*/
+  text-align: center;
+  width: 500px;
+  opacity: 0.7;
+  height: 200px;
+
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+
 #input-description {
      width: 100%; 
      box-sizing: border-box;
