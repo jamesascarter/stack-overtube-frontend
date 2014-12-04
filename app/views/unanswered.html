@@ -21,8 +21,8 @@
 
               <br>
 
-
-              <p>{{question.description}}</p>
+               <p>{{question.description | limitTo: 80}}{{question.description.length > 80 ? '...' : ''}}</p>
+             
               <p id="created-at">Posted {{question.createdAt|timeago}}
                 <br>
 
