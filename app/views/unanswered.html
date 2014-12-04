@@ -3,16 +3,18 @@
 
     <div  ng-controller="UnansweredquestionsCtrl">
 
-
+<div id="subheader">
+  <div id="order-by">
       Order By:
       <select ng-model="sortorder" class="input-small">
           <option selected value="-views">Views</option>
           <option value="-votes">Votes</option>
       </select>
+      </div>
 
-<input type="text" style="float:right;" ng-model="query" placeholder="Search">
-</br>
-  </br>
+<input id="searchbar" type="text" ng-model="query" placeholder="Search">
+</div>
+
       <ul class="thumbnails" id="question-snippets">
         <li ng-repeat="question in questions | orderBy:sortorder| filter:query">
           <div class="question-display">

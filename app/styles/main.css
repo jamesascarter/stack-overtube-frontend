@@ -234,7 +234,7 @@ body.aboutus {
 
 #question-snippets {
   list-style-type: none;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 #footer-text {
@@ -314,7 +314,7 @@ body.aboutus {
   width: 500px;
   height: 45px;
   background-color: #89AAFF; 
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #input::-webkit-input-placeholder 
@@ -337,7 +337,7 @@ body.aboutus {
 #input:hover {
   border: 1px solid #000000; 
 /*  border-color: grey;*/
-  color: white;
+  color: black;
   text-align: center;
   width: 500px;
     background-color: white;
@@ -389,7 +389,7 @@ body.aboutus {
       border: 1px solid #000000; 
       height: 200px;
       width: 500px;
-      opacity: 0.7;
+      opacity: 0.9;
 }
 
 #input-codesnippet {
@@ -402,7 +402,7 @@ background-color: #89AAFF;
   border: 1px solid #000000; 
   height: 200px;
   width: 500px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #input-description::-webkit-input-placeholder 
@@ -559,6 +559,7 @@ background-color: #89AAFF;
 #questions-title {
   color: white;
   padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -738,17 +739,63 @@ video#bgVideo {
   border: solid white 1px;
 }
 
+.btn-success:hover {
+  background-color: #B4AAFF;
+  border: solid white 1px;
+  opacity: 0.9;
+}
+.btn-success:active {
+  background-color: #B4AAFF;
+  border: solid white 1px;
+  opacity: 0.9;
+}
+
 #order-by {
+  padding-right: 35px;
   display: inline-block;
   color: white;
+  font-size: 20px;
 }
 
 #searchbar {
+  background-color: #89AAFF;
   display: inline-block;
-  width: 23%;
-  height: 40px;
+  padding-left: 7px;
+  width: 37%;
+  height: 39px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  opacity: 0.9;
 }
 
-#searchbarwrapper {
-  
+#searchbar:hover {
+   background-color: white;
+  display: inline-block;
+  width: 37%;
+  height: 39px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
 }
+
+#subheader {
+  padding-left: 20%;
+  padding-bottom: 0;
+}
+
+
+select {
+  background-color: #89AAFF;
+  color: grey;
+  font-size: 15px;
+  width: 250px;
+  height: 39px;
+  opacity: 0.9;
+}
+
+#searchbar::-webkit-input-placeholder {
+  color: black;
+}
+
+
